@@ -20,5 +20,7 @@
 * Realize uma comparação dos resultados desta execução com os obtidos com as execuções da Atividade Pratica 01 e 02;
 
   Execução Atividade Prática 01 (com synchronized): O Produtor e o Consumidor alteram entre si quase imediatamente. A alternância entre os dois parece ser perfeita, sem grandes intervalos.
+  
   Execução Atividade Prática 02 (com Monitores): O comportamento é similar ao anterior, mas pode ocorrer algum atraso em algumas situações, já que o controle do acesso ao dado é feito com monitores, o que pode resultar em pequenas variações entre a execução das threads.
+  
   Execução Atividade Prática 03 (com wait/notify): O uso de wait() e notify() oferece um controle mais explícito entre o Produtor e o Consumidor, onde o Produtor espera que o Consumidor consuma antes de armazenar o próximo dado, e vice-versa. Isso pode levar a uma alternância mais clara entre o armazenamento e o consumo dos dados.
